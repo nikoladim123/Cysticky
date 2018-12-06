@@ -40,8 +40,9 @@ header h1{
   color: white;
   position: absolute;
   right:1px;
-  width: 16.07vw;
-  display: inline-block;
+  top:1px;
+  width: 16.07vw;/*16.0.7 ori*/
+  display: block;
   margin-right: 1vw;
   margin-top: 1.07vw;
 }

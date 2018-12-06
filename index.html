@@ -15,7 +15,7 @@
       <div class="logo" id="logo"></div>
       <div class="login" id="login">
         <h1>(800) 579 - 291 1</h1>
-        <button type="button" class="buttonStyleWhite"  data-aos="fade-up"> Login</button>
+        <button id="headerButton" type="button" class="buttonStyleWhite"  data-aos="fade-up"> Login</button>
       </div>
     </header>
     <!-- Mobil nav -->
@@ -232,15 +232,23 @@
 window.onscroll = function() {myFunction()};
 function myFunction() {
     if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250 && document.documentElement.clientWidth > 700) {
-        document.getElementById("header").style.height = "9.2vw";
-        document.getElementById("logo").style.height = "6.07vw";
+        document.getElementById("header").style.height = "6vw";
+        document.getElementById("logo").style.height = "4.9vw";
         document.getElementById("logo").style.width = "15vw";
         document.getElementById("logo").style.left = "-7.5vw";
+        document.getElementById("logo").style.marginTop = "0vw";
+        document.getElementById("login").style.display = "flex";
+        document.getElementById("login").style.width = "32vw";
+        document.getElementById("headerButton").style.marginTop = "0vw";
     } else if(document.body.scrollTop < 250 && document.documentElement.clientWidth > 700){
         document.getElementById("header").style.height = "16.07vw";
         document.getElementById("logo").style.height = "11.07vw";
         document.getElementById("logo").style.width = "30vw";
         document.getElementById("logo").style.left = "-15vw";
+        document.getElementById("logo").style.marginTop = "2.5vw";
+        document.getElementById("login").style.display = "block";
+        document.getElementById("login").style.width = "16.07vw";
+        document.getElementById("headerButton").style.marginTop = "1.77vw";
     }
 }
 
@@ -248,19 +256,28 @@ function myFunction() {
 /* MEADIA FOR PHONE TO SET BACK TO NORMAL*/
 function myFun(x) {
     if (x.matches) { // If media query matches
+    document.getElementById("login").style.width = "32vw";
       document.getElementById("header").style.height = "16.07vw";
       document.getElementById("logo").style.height = "20.07vw";
       document.getElementById("logo").style.width = "60vw";
       document.getElementById("logo").style.left = "-30vw";
-    } else {
+      document.getElementById("header").style.position = "relative"
+      document.getElementById("header").style.marginBottom = "-30vw"
+    }
+    else{
+
+      document.getElementById("login").style.width = "16.07vw";
       document.getElementById("header").style.height = "16.07vw";
       document.getElementById("logo").style.height = "11.07vw";
       document.getElementById("logo").style.width = "30vw";
       document.getElementById("logo").style.left = "-15vw";
+      document.getElementById("logo").style.marginTop = "2.5vw";
+      document.getElementById("header").style.position = "fixed"
+      document.getElementById("header").style.marginBottom = "0vw"
     }
 }
 
-var x = window.matchMedia("(max-width: 700px)")
+var x = window.matchMedia("(max-width: 800px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFun) // Attach listener function on state changes
 

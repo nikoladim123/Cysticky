@@ -228,7 +228,7 @@
       semiLogIn.style.display = 'block';
     }
   }
-/*sticky top bar*/
+/*sticky top bar , you can delete any script without loosing response*/
 window.onscroll = function() {myFunction()};
 function myFunction() {
     if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250 && document.documentElement.clientWidth > 700) {
@@ -240,6 +240,7 @@ function myFunction() {
         document.getElementById("login").style.display = "flex";
         document.getElementById("login").style.width = "32vw";
         document.getElementById("headerButton").style.marginTop = "0vw";
+        document.getElementById("headerButton").style.width = "50%";
     } else if(document.body.scrollTop < 250 && document.documentElement.clientWidth > 700){
         document.getElementById("header").style.height = "16.07vw";
         document.getElementById("logo").style.height = "11.07vw";
@@ -249,6 +250,7 @@ function myFunction() {
         document.getElementById("login").style.display = "block";
         document.getElementById("login").style.width = "16.07vw";
         document.getElementById("headerButton").style.marginTop = "1.77vw";
+        document.getElementById("headerButton").style.width = "100%";
     }
 }
 

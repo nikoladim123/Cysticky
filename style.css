@@ -8,8 +8,13 @@
 }
 
 nav{
+  z-index: 3;
   position: relative;
-  margin-top:17vw;
+  margin-top:0vw;
+}
+
+.empty{
+  margin-top: 17vw;
 }
 
 body{
@@ -484,9 +489,12 @@ footer{
 /*MEDIA FOR PORTRAIT (PHONE)*/
 @media only screen and (orientation: portrait){
 
+  .empty{
+    margin-top: 31vw;
+  }
+
   nav{
     position: relative;
-    margin-top:31vw;
   }
 
   #navBarDesktop{

@@ -19,19 +19,18 @@
       </div>
     </header>
     <!-- Mobil nav -->
+    <div class="empty">  </div>
     <nav id="navBarMobile">
       <div class="burger" onclick="dropNav();">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <div class="search">
-
-      </div>
+      <div class="search"></div>
       <a href="#" id='semiLogIn'>Login</a>
     </nav>
     <!-- desktop nav -->
-    <nav data-aos="fade-up" id="navBarDesktop">
+    <nav id="navBarDesktop">
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Services</a>
@@ -258,6 +257,7 @@ function myFunction() {
 /* MEADIA FOR PHONE TO SET BACK TO NORMAL*/
 function myFun(x) {
     if (x.matches) { // If media query matches
+        element.style.display = 'none';
     document.getElementById("login").style.width = "32vw";
       document.getElementById("header").style.height = "16.07vw";
       document.getElementById("logo").style.height = "20.07vw";
@@ -267,7 +267,7 @@ function myFun(x) {
       document.getElementById("header").style.marginBottom = "-30vw"
     }
     else{
-
+  element.style.display = 'flex';
       document.getElementById("login").style.width = "16.07vw";
       document.getElementById("header").style.height = "16.07vw";
       document.getElementById("logo").style.height = "11.07vw";

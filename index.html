@@ -257,8 +257,10 @@ function myFunction() {
 /* MEADIA FOR PHONE TO SET BACK TO NORMAL*/
 function myFun(x) {
     if (x.matches) { // If media query matches
-        element.style.display = 'none';
-    document.getElementById("login").style.width = "32vw";
+      change = 1;
+      dropNav();
+      element.style.display = 'none';
+      document.getElementById("login").style.width = "32vw";
       document.getElementById("header").style.height = "16.07vw";
       document.getElementById("logo").style.height = "20.07vw";
       document.getElementById("logo").style.width = "60vw";

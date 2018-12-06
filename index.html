@@ -14,7 +14,7 @@
     <header id="header">
       <div class="logo" id="logo"></div>
       <div class="login" id="login">
-        <h1>(800) 579 - 291 1</h1>
+        <h1 id="numbers">(800) 579 - 291 1</h1>
         <button id="headerButton" type="button" class="buttonStyleWhite"  data-aos="fade-up"> Login</button>
       </div>
     </header>
@@ -239,7 +239,7 @@ function myFunction() {
         document.getElementById("logo").style.marginTop = "0vw";
         document.getElementById("login").style.display = "flex";
         document.getElementById("login").style.width = "32vw";
-        document.getElementById("headerButton").style.marginTop = "0vw";
+        document.getElementById("headerButton").style.marginTop = "-0.5vw";
         document.getElementById("headerButton").style.width = "50%";
     } else if(document.body.scrollTop < 250 && document.documentElement.clientWidth > 700){
         document.getElementById("header").style.height = "16.07vw";

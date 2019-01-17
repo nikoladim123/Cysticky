@@ -356,22 +356,22 @@ input::placeholder{
 /* newCarousel newCarousel */
 .newCarousel{
   padding-top: 0.1px;
-  height: 35vw;
+  height: 23vw;
 }
 .carContainer{
   position: relative;
   height: 20vw;
-  width: 73vw;
+  width: 60vw;
   margin-left: 50%;
-  margin-top: 7vw;
-  left:-36.5vw;
+  margin-top: 1.5vw;
+  left:-30vw;
 }
 .carouselWrapper{
   position: relative;
-  width: 52vw;
+  width: 30vw;
   height: 100%;
   margin-left: 50%;
-  left: -26vw;
+  left: -15vw;
   text-align: center;
 }
 .carouselWrapper>div:nth-child(1){
@@ -388,18 +388,20 @@ input::placeholder{
   height: 100%;
 }
 .carPone{
-  line-height: 2vw;
-  font-size: 1.5vw;
-  color: rgb(85,85,85);
-  font-weight: 600;
+margin-top: 3vw;
+  line-height: 32px;
+  font-size: 21px;
+  color: #555555;
+  font-weight: 500;
 }
 .carPtwo{
-  font-size:1.35vw;
-  color: rgb(124,124,124);
+  font-size:18px;
+  color: #555555;
+  line-height: 11px;
 }
 .carPthree{
-  font-size: 0.8vw;
-  color: rgb(174,174,174);
+  font-size: 12px;
+  color: #777777;
 }
 
 .leftArrowBox,.rightArrowBox{
@@ -430,31 +432,33 @@ input::placeholder{
 /* newCarousel newCarousel End*/
 .sectionTags{
   position: relative;
-  height: 32vw;
+  height: 18vw;
 }
 
+
 .sectionTags h1{
+  font-weight: 300;
   margin: 0;
-  margin-top: 4.1vw;
+  margin-top: 2.1vw;
   margin-bottom: 3.31vw;
-  color: rgb(80,80,80);
-  font-size: 3vw;
+  color: #555555;
+  font-size: 40px;
 }
 
 .tagWrapper{
   overflow: hidden;
   position: relative;
-  width: 78vw;
+  width: 60vw;
   margin-left: 50%;
-  left:-39vw;
+  left:-30vw;
 }
 
 .tags{
   transition: 1s;
   position: relative;
   left: 0;
-  height: 6vw;
-  width: 91vw;
+  height: 4vw;
+  width: 70vw;
   display: flex;
   justify-content: center;
 }
@@ -473,85 +477,88 @@ input::placeholder{
   background-image: url('img/tags/tagOne.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 13vw;
-  height: 6vw;
+  width: 10vw;
+  height: 4vw;
 }
 
 .tagTwo{
   background-image: url('img/tags/tagTwo.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 13vw;
-  height: 6vw;
+  width: 10vw;
+  height: 4vw;
 }
 
 .tagThree{
   background-image: url('img/tags/tagThree.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 13vw;
-  height: 6vw;
+  width: 10vw;
+  height: 4vw;
 }
 
 .tagFour{
   background-image: url('img/tags/tagFour.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 13vw;
-  height: 6vw;
+  width: 10vw;
+  height: 4vw;
 }
 
 .tagFive{
   background-image: url('img/tags/tagFive.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 13vw;
-  height: 6vw;
+  width: 10vw;
+  height: 4vw;
 }
 
 .tagSix{
   background-image: url('img/tags/tagSix.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 13vw;
-  height: 6vw;
+  width: 10vw;
+  height: 4vw;
 }
 .tagSeven{
   background-image: url('img/tags/tagSeven.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 13vw;
-  height: 6vw;
+  width: 10vw;
+  height: 4vw;
 }
 .sectionTags button{
   color: white;
-  font-size: 2vw;
+  font-size: 28px;
+  font-weight: 500;
   background-color: rgb(14,150,126);
   border: none;
   position: absolute;
   bottom: 0px;
   margin-left: 50%;
-  left: -11vw;
-  width: 22vw;
-  height: 6vw;
+  left: -149px;
+  width: 298px;
+  height: 82px;
 }
 /*tags end*/
 /* three div car that looks like crap */
 .threeDivPic{
   background-image: url('img/twitterbg.png');
-  background-size: 100% 100%;
-  height: 29.5vw;
+  background-size: 100% 130%;
+  background-position: 0 40%;
+  height: 18vw;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
   overflow: hidden;
 }
 
-.fa{
+.threeDivPic .fa{
   font-size:36px;
   color:white;
-  margin-bottom: 2vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .fa:hover{
@@ -561,10 +568,11 @@ input::placeholder{
 
 .scrollDiv{
   color:white;
-  height: 17.02vw;
-  width: 92vw;
+  height: 9vw;
+  width: 70vw;
   overflow-y: scroll;
-  font-size:1.4vw;
+  font-size:16px;
+  line-height: 27px;
   display: flex;
   overflow-x: hidden;
   user-select: none;
@@ -576,7 +584,7 @@ input::placeholder{
 
 .scrollOne{
   text-align: center;
-  min-width: 28vw;
+  /* min-width: 28vw; */
   margin-left: 1vw;
   margin-right: 1.2vw;
 }
@@ -605,7 +613,7 @@ footer a{
 .footerGreenP{
   font-size: 18px;
   font-weight: 500;
-  color:rgb(46,196,161);
+  color:#2ec4aa;
   margin-bottom: 2vw;
 }
 
@@ -613,7 +621,9 @@ footer a{
   margin-top: 2.5vw;
   text-align: center;
 }
-
+footer .fa{
+  margin-bottom: 1.6vw;
+}
 .footer-fa{
   padding-top: 0.2vw;
   width: 1.8vw;

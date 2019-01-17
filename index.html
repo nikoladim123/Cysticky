@@ -243,21 +243,9 @@
         <!-- CAROUSEL DIV-->
         <section class="threeDivPic">
           <div class="">
-            <a><i class="fa fa-twitter" style="font-size:24px"></i></a>
+            <a class="threedivTwit"><i class="fa fa-twitter " style="font-size:24px"></i></a>
           </div>
           <div class="scrollDiv" id="car">
-            <div class="scrollOne">
-              <p >Don't miss
-              <a href="https://twitter.com/marioawig" target="_blank" rel="nofollow">@marioawig</a> and Michael Parascandola at the National Workers' Compensation and Disability Conference and Expo, 12/5 - 12/7 at the Mandalay Bay in Las Vegas.
-              <a href="https://t.co/OeuMaiyutk" title="https://t.co/OeuMaiyutk" target="_blank">https://t.co/OeuMaiyutk</a> <a href="https://twitter.com/hashtag/nwcdconf" target="_blank" rel="nofollow">#nwcdconf</a>
-              <a href="https://twitter.com/NWCDConf" target="_blank">@NWCDConf</a>
-              <a href="https://twitter.com/hashtag/conference" target="_blank" rel="nofollow">#conference</a>
-              <a href="https://twitter.com/hashtag/networking" target="_blank" rel="nofollow">#networking</a><br>
-              <a href="https://twitter.com/hashtag/workerscompensation" target="_blank" rel="nofollow">#workerscompensation</a><br>
-              <a href="https://twitter.com/hashtag/disability" target="_blank">#disability</a><br>
-              <a href="https://twitter.com/hashtag/lasvegas" target="_blank" rel="nofollow">#lasvegas</a></p>
-              November 30
-            </div>
             <div class="scrollOne">
               <p >Don't miss
               <a href="https://twitter.com/marioawig" target="_blank" rel="nofollow">@marioawig</a> and Michael Parascandola at the National Workers' Compensation and Disability Conference and Expo, 12/5 - 12/7 at the Mandalay Bay in Las Vegas.
@@ -317,8 +305,9 @@
 
         <footer>
           <div class="footerSocial">
+            <i class="fab fa-linkedin-in"></i>
             <a><i class="fa fa-facebook footer-fa" style="font-size:24px"></i></a>
-            <a><i class="fa fa-instagram footer-fa" style="font-size:24px"></i></a>
+            <a><i class="fa fa-linkedin footer-fa" style="font-size:24px"></i></a>
             <a><i class="fa fa-twitter footer-fa" style="font-size:24px"></i></a>
           </div>
           <p>Alliance Worldwide Investigative Group <br>
@@ -477,15 +466,18 @@ function rightArrowFun() {
 var tagWrapper = document.getElementsByClassName('tagWrapper')[0];
 var tags = document.getElementsByClassName('tags')[0];
 var tagModulo = 2;
-tagWrapper.addEventListener('mouseenter',function(){
+function tagsAuto(){
   if(tagModulo%2 === 0){
-    tags.style.left = '-13vw'
+    tags.style.left = '-10vw'
   }
   if(tagModulo%2 === 1){
     tags.style.left = '0vw'
   }
   tagModulo++;
-})
+}
+setInterval(function(){
+  tagsAuto();
+},3000)
 
     </script>
   </body>

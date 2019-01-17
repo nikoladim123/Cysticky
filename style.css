@@ -575,6 +575,7 @@ input::placeholder{
 }
 
 .scrollOne{
+  line-height: 37px;
   text-align: center;
   min-width: 28vw;
   margin-left: 1vw;
@@ -585,7 +586,8 @@ footer{
   position: relative;
   padding-top: 0.1px;
   display: block;
-  height: 41vw;
+  /* height: 41vw; */
+  padding-bottom: 0.1px;
   background-color: black;
   color:white;
   text-align: center;
@@ -623,8 +625,8 @@ footer a{
 .toTopArrow{
   overflow: hidden;
   position: absolute;
-  bottom: 4vw;
-  right:8.5vw;
+  bottom: 1vw;
+  right:1vw;
   width: 3vw;
   height: 1.5vw;
 }

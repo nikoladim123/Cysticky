@@ -582,37 +582,42 @@ input::placeholder{
 }
 /* footer */
 footer{
+  padding-bottom: 0.1px;
   position: relative;
   padding-top: 0.1px;
   display: block;
-  height: 41vw;
+  /* height: 41vw; */
   background-color: black;
   color:white;
   text-align: center;
 }
 
 footer p{
-  font-size: 1.1vw;
-  margin-bottom: 2.3vw;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-bottom: 1vw;
 }
 footer a{
   text-decoration: none;
 }
 
 .footerGreenP{
-  font-size: 1.4vw;
+  font-size: 18px;
+  font-weight: 500;
   color:rgb(46,196,161);
+  margin-bottom: 2vw;
 }
 
 .footerSocial{
-  margin-top: 3.71vw;
+  margin-top: 2.5vw;
   text-align: center;
 }
 
 .footer-fa{
-  padding-top: 0.5vw;
-  width: 2.3vw;
-  height: 1.8vw;
+  padding-top: 0.2vw;
+  width: 1.8vw;
+  height: 1.5vw;
   color: black;
   background-color: white;
 }
@@ -623,13 +628,13 @@ footer a{
 .toTopArrow{
   overflow: hidden;
   position: absolute;
-  bottom: 4vw;
-  right:8.5vw;
+  bottom: 1vw;
+  right:1vw;
   width: 3vw;
   height: 1.5vw;
 }
 .toTopArrowInner{
-  top: 1vw;
+  top: 1.5vw;
   transform: rotate(45deg);
   position: relative;
   border: 0.3vw solid white;

@@ -409,6 +409,9 @@ input::placeholder{
   width: 1.5vw;
   height: 2.2vw;
 }
+.leftArrowBox:hover,.rightArrowBox:hover{
+  cursor: pointer;
+}
 .rightArrowBox{
   right: 0px;
   transform: rotate(180deg);
@@ -420,6 +423,9 @@ input::placeholder{
   width: 1.5vw;
   height: 1.5vw;
   border: 0.3vw solid rgb(173,230,221);
+}
+.arrow:hover{
+  border-color: rgb(133,190,181)
 }
 /* newCarousel newCarousel End*/
 .sectionTags{

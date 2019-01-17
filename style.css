@@ -3,6 +3,14 @@
   font-family: 'Raleway', sans-serif;
 }
 
+div{
+  /* border: 1px solid red; */
+}
+
+button:hover{
+  cursor: pointer;
+}
+
 #navBarMobile{
   display: none;
 }
@@ -31,6 +39,7 @@ header{
   background-color: #0f967f;
   z-index: 2;
   transition: height 1s;
+  z-index: 5;
 }
 
 header h1{
@@ -38,7 +47,7 @@ header h1{
   margin-left: 0.71vw;
   margin-right: 0.5vw;
   font-size: 2vw;
-  text-align-last: justify;
+  text-align: center;
 }
 
 .login{
@@ -46,7 +55,7 @@ header h1{
   position: absolute;
   right:1px;
   top:1px;
-  width: 16.07vw;/*16.0.7 ori*/
+  /* width: 16.07vw;/*16.0.7 ori*/ */
   display: block;
   margin-right: 1vw;
   margin-top: 1.07vw;
@@ -82,12 +91,12 @@ header button:hover{
 }
 
 #navBarDesktop{
-  padding-left: 20.35%;
-  padding-right: 20.35%;
+  padding-left: 10.35%;
+  padding-right: 10.35%;
   height: 3.92vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #navBarDesktop a{
@@ -97,7 +106,7 @@ header button:hover{
   font-size: 1.8vw;
 }
 
-a:hover{
+#navBarDesktop a:hover{
   text-decoration: underline;
 }
 
@@ -108,18 +117,40 @@ a:hover{
   grid-auto-columns: 1fr 1fr;
 }
 
-.sectionOne p {
+.sectionOne p:nth-child(1) {
+  font-size: 2.8vw;
   margin: 0;
+}
+.sectionOne p:nth-child(2){
+  margin-top: 4vw;
+  font-size: 1.15vw;
 }
 
 .sectionOne div{
+  position: relative;
   color:white;
-  font-size: 2vw;
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
   padding-bottom:4.23vw;
+  padding-top: 3.3vw;
+  padding-left: 3vw;
+}
+
+.sectionOne div:nth-child(3) p,.sectionOne div:nth-child(4) p{
+  margin-top: 12vw;
+}
+
+.sectionOne button{
+  position: absolute;
+  left: 3vw;
+  bottom: 2vw;
+  width: 11vw;
+  height: 4vw;
+  background-color: rgb(14,150,126);
+  color: white;
+  border: none;
+  font-size: 1.3vw;
 }
 
 .picOne{
@@ -153,51 +184,57 @@ a:hover{
   margin-left: 1px;
   background-size: 100% 100% ;
 }
-
+/* Section risk */
 .sectionRisk{
+  padding-top: 0.1px;
   color: white;
-  font-size: 2.1vw;
-  text-align: center;
-  background-color: #0f967f;
   height: 26.17vw;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  background-image:url('img/riskBG.jpg');
+  background-size: 100% 150%;
+  background-position: 0 50%;
 }
-
-.sectionRisk h1{
-  line-height: 1.35;
-  font-size: 3vw;
-  margin: 0;
-  margin-top:4.28vw;
+.sectionRiskLeftText{
+  width: 60%;
 }
-
-.sectionRisk p{
-  font-size: 1.5vw;
-  margin: 0;
-  margin-top: 3.22vw;
-  padding-bottom: 10px;
-}
-
-.sectionRisk button{
-  background-color: white;
-  color:#0f967f;
-  border-radius: 1vw;
-  font-weight: bold;
+.sectionRiskLeftText p{
   font-size: 2vw;
-  height: 5vw;
-  width: 24.07vw;
+  margin-left: 6vw;
+  margin-top: 4vw;
+  font-weight: 600;
 }
-
-.sectionRisk button:hover{
+.sectionRiskRightForm{
+  width: 40%;
+}
+form{
+  margin-top: 3.7vw;
+}
+input{
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 25vw;
+  height: 3vw;
+  font-size: 1vw;
+}
+input::placeholder{
   color:white;
-  background-color: #0f967f;
-  border: 1px solid white;
+}
+.sectionRiskRightForm button{
+  width: 11.5vw;
+  height: 3.3vw;
+  background-color: rgb(228,237,22);
+  border: none;
+  color: rgb(96,95,75);
+  font-size: 1.5vw;
+  margin-top: 1.5vw;
 }
 
+/* image guy */
 .sectionImageOnly{
   background-image: url('img/sectionGuyPic.png');
-  height: 41.26vw;
+  min-height: 55vw;
   background-size: 100% 100%;
 }
 
@@ -206,47 +243,61 @@ a:hover{
 .sectionInspired{
   display: flex;
   justify-content: center;
-  height: 43.79vw;
+  height: 40vw;
   border-bottom: 3.14vw solid #0f967f;
+  background-color: black;
 }
 
 .claimGame{
-  background-image: url('img/ClaimGame.png');
-  height: 43.75vw;
+  height: 40vw;
   width: 38vw;
   margin-top: 1px;
+}
+.claimGameCut{
+  width: 18.58vw;
+  height: 29.7vw;
+  background-image: url('img/claimGameCut.jpg');
   background-size: 100% 100%;
+  margin-left: 5.947vw;
+  margin-top: 6.31vw;
 }
 
 .inspired{
+  background-color: white;
+  position: relative;
   color:#0f967f;
   width: 65vw;
   padding-left: 4.21vw;
   display: flex;
   align-items: stretch;
   flex-direction: column;
+  margin-bottom: 4.46vw;
 }
 
 .inspiredText{
-  padding-right: 10vw;
+  padding-right: 9vw;
   margin-bottom:3.3vw;
 }
 
 .inspiredText h1{
   margin: 0;
-  margin-top: 7.43vw;
+  margin-top: 3.34vw;
   margin-bottom: 2vw;
   font-size: 3vw;
   font-weight: 900;
 }
 
 .inspiredText p{
-  line-height: 1.8;
-  font-size: 1.5vw;
+  color: rgb(54,112,87);
+  line-height: 2.1vw;
+  font-size: 1.19vw;
   margin: 0;
 }
 
 .twenty{
+  color: rgb(54,112,87);
+  position: relative;
+  margin-top: 1.8vw;
   display: flex;
   justify-content: center;
 }
@@ -301,28 +352,105 @@ a:hover{
   height: 3vw;
   width: 18vh;
 }
-
 /*inspired pain end*/
+/* newCarousel newCarousel */
+.newCarousel{
+  padding-top: 0.1px;
+  height: 35vw;
+}
+.carContainer{
+  position: relative;
+  height: 20vw;
+  width: 73vw;
+  margin-left: 50%;
+  margin-top: 7vw;
+  left:-36.5vw;
+}
+.carouselWrapper{
+  position: relative;
+  width: 52vw;
+  height: 100%;
+  margin-left: 50%;
+  left: -26vw;
+  text-align: center;
+}
+.carouselWrapper>div:nth-child(1){
+  opacity: 1;
+}
+.carBox{
+  /* display: none; */
+  opacity: 0;
+  transition: 0.5s;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.carPone{
+  line-height: 2vw;
+  font-size: 1.5vw;
+  color: rgb(85,85,85);
+  font-weight: 600;
+}
+.carPtwo{
+  font-size:1.35vw;
+  color: rgb(124,124,124);
+}
+.carPthree{
+  font-size: 0.8vw;
+  color: rgb(174,174,174);
+}
 
+.leftArrowBox,.rightArrowBox{
+  top:45%;
+  overflow: hidden;
+  position: absolute;
+  width: 1.5vw;
+  height: 2.2vw;
+}
+.rightArrowBox{
+  right: 0px;
+  transform: rotate(180deg);
+}
+.arrow{
+  position: relative;
+  left: 0.8vw;
+  transform: rotate(45deg);
+  width: 1.5vw;
+  height: 1.5vw;
+  border: 0.3vw solid rgb(173,230,221);
+}
+/* newCarousel newCarousel End*/
 .sectionTags{
-  height: 19vw;
+  position: relative;
+  height: 32vw;
 }
 
 .sectionTags h1{
   margin: 0;
   margin-top: 4.1vw;
   margin-bottom: 3.31vw;
-  color: #0f967f;
+  color: rgb(80,80,80);
   font-size: 3vw;
 }
 
+.tagWrapper{
+  overflow: hidden;
+  position: relative;
+  width: 78vw;
+  margin-left: 50%;
+  left:-39vw;
+}
+
 .tags{
-  /*background-image: url('img/tags.png');
-  background-size: 100% 100%;*/
+  transition: 1s;
+  position: relative;
+  left: 0;
   height: 6vw;
+  width: 91vw;
   display: flex;
   justify-content: center;
-
 }
 
 .tags div{
@@ -333,8 +461,6 @@ a:hover{
 .tags div:hover{
   opacity: 1;
   cursor: pointer;
-  height: 7vw;
-  width: 14vw;
 }
 /* tags images*/
 .tagOne{
@@ -384,7 +510,27 @@ a:hover{
   width: 13vw;
   height: 6vw;
 }
+.tagSeven{
+  background-image: url('img/tags/tagSeven.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 13vw;
+  height: 6vw;
+}
+.sectionTags button{
+  color: white;
+  font-size: 2vw;
+  background-color: rgb(14,150,126);
+  border: none;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 50%;
+  left: -11vw;
+  width: 22vw;
+  height: 6vw;
+}
 /*tags end*/
+/* three div car that looks like crap */
 .threeDivPic{
   background-image: url('img/twitterbg.png');
   background-size: 100% 100%;
@@ -410,7 +556,7 @@ a:hover{
 .scrollDiv{
   color:white;
   height: 17.02vw;
-  width: 92.70vw;
+  width: 92vw;
   overflow-y: scroll;
   font-size:1.4vw;
   display: flex;
@@ -428,61 +574,61 @@ a:hover{
   margin-left: 1vw;
   margin-right: 1.2vw;
 }
-
+/* footer */
 footer{
-  display: block;
-  height: 30vw;
-  background-color: #0f967f;
-  display: flex;
-  justify-content: center;
-  padding-top: 3.57vw;
-  color:white;
-}
-
-.footerTxt{
-  width: 50vw;
-  height: 26.42vw;
-}
-
-.footerTxt p{
-  line-height: 1.3;
-  margin-left: 11.78vw;
-  font-size: 1.7vw;
-}
-
-.footerImg{
-  background-image: url('img/footerImg.png');
-  background-size: 100% 100%;
-  width: 36.28vw;
-  height: 26.42vw;
-  margin-left: 4.71vw;
-  margin-right: 8.92vw;
-  padding-left: 2vw;
-  padding-right: 2.85vw;
-}
-
-.footerImg h2{
-  margin-top: 3.21vw;
-  font-size: 2vw;
-  font-weight: bold;
-}
-
-.footerImg p{
-  line-height: 1.3;
-  font-size: 1.7vw;
-}
-
-.footerImg button{
   position: relative;
+  padding-top: 0.1px;
+  display: block;
+  height: 41vw;
+  background-color: black;
+  color:white;
+  text-align: center;
+}
+
+footer p{
+  font-size: 1.1vw;
+  margin-bottom: 2.3vw;
+}
+footer a{
+  text-decoration: none;
+}
+
+.footerGreenP{
+  font-size: 1.4vw;
+  color:rgb(46,196,161);
+}
+
+.footerSocial{
+  margin-top: 3.71vw;
+  text-align: center;
+}
+
+.footer-fa{
+  padding-top: 0.5vw;
+  width: 2.3vw;
+  height: 1.8vw;
+  color: black;
   background-color: white;
-  color:#0f967f;
-  border-radius: 1vw;
-  font-weight: bold;
-  font-size: 2vw;
-  width: 15.85vw;
-  height: 3.92vw;
-  margin-left: 50%;
-  left:-7.43vw;
+}
+
+.toTopArrow:hover{
+  cursor: pointer;
+}
+.toTopArrow{
+  overflow: hidden;
+  position: absolute;
+  bottom: 4vw;
+  right:8.5vw;
+  width: 3vw;
+  height: 1.5vw;
+}
+.toTopArrowInner{
+  top: 1vw;
+  transform: rotate(45deg);
+  position: relative;
+  border: 0.3vw solid white;
+  width: 2.6vw;
+  height: 2.6vw;
 }
 
 
@@ -558,7 +704,7 @@ footer{
   /*logo*/
   header{
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
     min-height: 30vw;
     background-color: #0f967f;
@@ -566,7 +712,7 @@ footer{
 
   header h1{
     margin: 0;
-    margin-left: 0.71vw;
+    margin-left: 5.71vw;
     margin-right: 0.5vw;
     font-size: 4vw;
     text-align-last: justify;
@@ -649,6 +795,13 @@ footer{
     font-size: 1.9vw;
   }
 
+  .twenty{
+    margin: 0;
+  }
+  .imgTwenty{
+    padding: 0;
+  }
+
 
   /*inspired end*/
   .sectionRisk{
@@ -677,12 +830,7 @@ footer{
     flex-direction: column;
     width: 50vw;
   }
-
-  .footerTxt p{
-    line-height: 1.1;
-    margin-left: 6vw;
-    font-size: 2.3vw;
-  }
+/* footer */
 
   footer{
     height: 33vw;
